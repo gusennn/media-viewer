@@ -44,7 +44,7 @@ html {
   }
 }
 
-@media ( min-width: 481px ) and ( max-width: 767px ) {
+@media ( min-width: 481px ) and ( max-width: 767px ) and ( orientation: portrait ) {
   h1:after {
     content: 'Лаптоп';
     display: block;
