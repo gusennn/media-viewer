@@ -1,0 +1,167 @@
+* {
+  margin: 0;
+  padding: 0;
+  font-family: sans-serif;
+}
+html {
+  font-size: 10px;
+}
+
+
+@media ( max-width: 480px ) {
+  h1:after {
+    content: 'Смартфон ( горизонтальный )';
+    display: block;
+    margin-top: 10px;
+    color: #3aa
+  }
+  p:after {
+    content: '1';
+  }
+  .container:after {
+    content: 'Жил отважный капитан, Он объездил много стран, И не раз он бороздил океан.';
+    font-size: 2.1rem;
+    width: 257px;
+    flex-shrink: 0;
+  }
+}
+
+@media ( min-width: 480px ) and ( orientation: landscape ) {
+  h1:after {
+    content: 'Планшета';
+    display: block;
+    margin-top: 10px;
+    color: #3aa
+  }
+  p:after {
+    content: '2';
+  }
+  .container:after {
+    content: 'Раз пятнадцать он тонул, Погибал среди акул, Но ни разу даже глазом не моргнул.';
+    font-size: 2.1rem;
+    width: 257px;
+    flex-shrink: 0;
+  }
+}
+
+@media ( min-width: 481px ) and ( max-width: 767px ) {
+  h1:after {
+    content: 'Лаптоп';
+    display: block;
+    margin-top: 10px;
+    color: #3aa
+  }
+  p:after {
+    content: '3';
+  }
+  .container:after {
+    content: 'И в беде, И в бою Напевал он эту песенку свою:';
+    font-size: 2.1rem;
+    width: 257px;
+    flex-shrink: 0;
+  }
+}
+
+@media ( min-width: 768px ) {
+  h1:after {
+    content: 'FullHD';
+    display: block;
+    margin-top: 10px;
+    color: #3aa
+  }
+  p:after {
+    content: '4';
+  }
+  .container:after {
+    content: '«Капитан, капитан, улыбнитесь, Ведь улыбка — это флаг корабля. Капитан, капитан, подтянитесь, Только смелым покоряются моря!»';
+    font-size: 2.5rem;
+    width: 300px;
+    flex-shrink: 0;
+  }
+}
+@media ( min-width: 1200px ) {
+  h1:after {
+    content: '...';
+    display: block;
+    margin-top: 10px;
+    color: #3aa
+  }
+  p:after {
+    content: '5';
+  }
+  .container:after {
+    content: 'Но однажды капитан Был в одной из дальних стран И влюбился, как простой мальчуган. ...';
+    font-size: 2.5rem;
+    width: 290px;
+    flex-shrink: 0;
+  }
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/* Просто стили. Чтобы не мешались */
+.container {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  padding: 0px 10px;
+  width: 100vw;
+  height: 100vh;
+  background-color: #e0e0e0;
+  box-sizing: border-box;
+}
+.container:after {
+  padding: 20px 0px;
+}
+p {
+  font-size: 2rem;
+  border-bottom: 3px solid #3aadff;
+}
+h1 {
+  margin-bottom: 20px;
+  margin-left: auto;
+  margin-right: auto;
+  padding: 20px;
+  border-radius: 15px;
+  background: #fff;
+  text-align: center;
+  min-width: 300px;
+}
+a {
+  display: flex;
+  padding: 6px 12px;
+  border-radius: 5px 20px;
+  text-decoration: none;
+  color: #fff;
+  background-color: #3aa;
+  font-size: 1.5rem;
+  order: 1;
+  transition: .2s;
+}
+a:hover {
+  color: #3aa;
+  background: none;
+  transition: .2s;
+}
