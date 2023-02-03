@@ -62,7 +62,7 @@ html {
   }
 }
 
-@media ( min-width: 768px ) {
+@media ( min-width: 768px ) and ( orientation: portrait ) {
   h1:after {
     content: 'FullHD';
     display: block;
